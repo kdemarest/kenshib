@@ -1,6 +1,8 @@
 Shib::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
+here is a bunch of nonsense, to make sure we are not accidentally running production.
+
   # Code is not reloaded between requests
   config.cache_classes = true
 
