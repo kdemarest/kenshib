@@ -1,0 +1,34 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://jeesty.homeip.net/shibboleth">
+  <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol">
+    <md:KeyDescriptor>
+      <ds:KeyInfo>
+        <ds:X509Data>
+          <ds:X509Certificate>
+MIIDCTCCAfGgAwIBAgIJAJkoexhcd9AeMA0GCSqGSIb3DQEBBQUAMCExHzAdBgNV
+BAMTFktlbnMtTWFjQm9vay1BaXIubG9jYWwwHhcNMTIwOTI1MTkzNDAxWhcNMjIw
+OTIzMTkzNDAxWjAhMR8wHQYDVQQDExZLZW5zLU1hY0Jvb2stQWlyLmxvY2FsMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxP7dzByhQXNglQVxN+j/hP/E
+LSkiwN8Yp+KYbT/1U1BtnqN73jzIkqzuoNy9OUr4+wTGLsLxGL/5gZ/x9XXPXgTu
+pgfXGvqY+hcnvg9tpypthJmrbAPijk4mD8laFVuACnVpcWWqNwhOWSnqRCqNf3VP
+7pLhLeC7m2qiKTT8vYS/DvR6CtmZ6qiwmaHBawB3xP7TBWnpYEPjTd2Gwk/dJYk2
+qtKZlYhIDwfioWDUtM4qLD8H4JIylHyEi2hvtC+v7XzScwnRA/UQVmWxnTlQ+Gk6
+ytANs04aFzE3oHVQ7rXSzDin4m6hhnZzrccJyyrQYmR3GZhv1QN57x3L/aK4lQID
+AQABo0QwQjAhBgNVHREEGjAYghZLZW5zLU1hY0Jvb2stQWlyLmxvY2FsMB0GA1Ud
+DgQWBBSuT0wB/jTbgjidvr4t4oUWpw5NEDANBgkqhkiG9w0BAQUFAAOCAQEAo3H5
+EEEh3gwBqE4SJF+8s7lx2c0PbKxOuTr5JPHgL9PVkQtVCCSEp708Fco2Sj2VbsOw
+FmVz8z7x+pPKgf6gZF+RSsFsh/BAcho54tdgcOVvJiFi7Zdf3fWzjWGNZTYVAofB
+RBEyi9buz0XAjnPbUjCreTgwQHvMHWw1Jkqhmt5kpjpOytim6aowdI8cYQSgons7
+APlANnnXVbbuazrVlxodwQ829hBjKZd/4hHyL0M9SKGU/lnRklugL+C1PB7ZcWXi
+DDCkFXMjgPdUz4AgChC8bvrQavVdWdhnNbCxE+IgSU4KuIezP2VxbeY5xsEVIkat
+if2UrDqJ+eVPTyQVYw==
+          </ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </md:KeyDescriptor>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://jeesty.homeip.net/Shibboleth.sso/SAML2/POST" index="1"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://jeesty.homeip.net/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://jeesty.homeip.net/Shibboleth.sso/SAML2/ECP" index="3"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://jeesty.homeip.net/Shibboleth.sso/SAML/POST" index="4"/>
+  </md:SPSSODescriptor>
+</md:EntityDescriptor>
+

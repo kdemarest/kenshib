@@ -1,10 +1,12 @@
-require "awesome_print"
 
 class SessionsController < ApplicationController
   def new
   end
 
 	def create
+#		logger.debug "KD: in session controller"
+#	    render :text => "KD: in session controller"
+
 	  auth_hash = request.env['omniauth.auth']
 	  if session[:user_id]
 	    # Means our user is signed in. Add the authorization to the user
@@ -21,6 +23,11 @@ class SessionsController < ApplicationController
 
 	def failure
 		render :text => "Sorry, but you didn't allow access to our app!"
+	end
+	
+	def ken
+		logger.debug "KD: ken"
+		render :text => "ken"
 	end
 	
 	def destroy

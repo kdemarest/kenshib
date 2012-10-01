@@ -1,10 +1,12 @@
 Shib::Application.routes.draw do
 
-  get "home/index"
+get "home/index"
 
 get   '/login', :to => 'sessions#new', :as => :login
 match '/auth/:provider/callback', :to => 'sessions#create'
 match '/auth/failure', :to => 'sessions#failure'
+
+match '/auth/:provider/ken', :to => 'sessions#ken'
 
 get '/logout', :to => 'sessions#destroy'
 

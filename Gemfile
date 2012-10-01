@@ -26,8 +26,6 @@ gem 'omniauth-github'
 gem 'omniauth-openid'
 gem 'omniauth-shibboleth'
 
-gem 'awesome_print'
-
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
